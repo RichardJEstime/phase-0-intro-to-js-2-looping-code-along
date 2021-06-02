@@ -1,15 +1,19 @@
 // Code your solutions in this file
-function writeCards( [ 'firstPerson','secondPerson','thirdPerson'], 'surprise') {
-    for(let i = 0; i < writeCards.length; i++) {
-        console.log [`Thank you ${writeCards[i]} for the wonderful ${writeCards[1]} gift!`]
-        console.log [`Thank you ${} for the wonderful ${} gift!`]
-        console.log [`Thank you ${} for the wonderful ${} gift!`]
+function writeCards(names, event) {
+    let thankYouCards = [];
+    for(let i = 0; i < names.length; i++) {
+        thankYouCards.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
     } 
-  }
+    return thankYouCards;
+}
 
 function countDown(number) {
-    let number = 10;
-    while (number < 10){
-        console.log (countDown--)
+    while (0 < number){
+        console.log(number) 
+        number--
     }
+    console.log(number)
 }
+
+//10,9,8,7,6,5,4,3,2,1,0
+
